@@ -1,0 +1,4 @@
+Sai Srikar,saisrikark@gmail.com,abcdABCD1234,lecturer,PES,download (1).png
+Sankarshana Ra0,sankarshana.rao@gmail.com,Sanky123$,student,PES University,
+ajji ajji,ajji@ajji,abcdABCD1234,student,poes,book1.jpg
+Sankarshana Rao,sankarshana.rao@gmail.com,abcdABCD1234,lecturer,PES,download.png

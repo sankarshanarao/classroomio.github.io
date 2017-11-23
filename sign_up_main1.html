@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal sign up form</title>
+</head>
+
+<body class="my-container" id="moo" onload="startTimer()">
+  <form action="sign_up.php" method="post" align="top" enctype="multipart/form-data">
+	  <h1>Sign up</h1><br/>
+	  <input type="text" name="name" placeholder="Full name" title="Format: Xx[space]Xx (e.g. Alex Cican)" autofocus autocomplete="off" required pattern="^\w+\s\w+$" />
+	  <input type="text" name="email" placeholder="Email address" required />
+	  <input type="text" name="university" placeholder="Name of current University" required />
+	  <input type="password" name="password" id="password" placeholder="Password" title="Password min 8 characters. At least one UPPERCASE and one lowercase letter" required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"/>
+	  <input type="radio" name="category" value="student" checked>Student<br>
+	  <input type="radio" name="category" value="lecturer">Lecturer<br>
+	  Select image to upload:
+	  <input type="file" name="file" id="fileToUpload">
+	  <button type="submit" value="Sign Up" ><span>Sign up</span></button>
+  </form>
+</body>
+</html>

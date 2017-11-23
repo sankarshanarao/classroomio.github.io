@@ -1,0 +1,170 @@
+<html>
+<head>
+    <link rel="icon" href="assets/classroomioDark.png">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8  sans-serif;
+  color: #777;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 12%;
+  background-color: #54f77a;
+}
+.button2 {
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  border-radius:10px;
+}
+.button2:hover {
+    background-color:#4CAF50 ;
+    color: white;
+  transition-duration:2s;
+  
+}
+.testi{
+position:relative;
+height:200%;
+
+}
+
+</style>
+
+
+</head>
+<body style = "background-image: url('b.jpg');">
+<div class='fixed-nav-bar'>
+  <style>
+        .fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 73px;
+  background-color: #54f77a;
+}
+            
+            nav {
+    width: 100%;
+}
+
+nav ul {
+    background-color: #54f77a;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    
+
+}
+
+ul.topnav li {
+    list-style: none;
+    text-decoration: none;
+    float:left; 
+}
+
+ul.topnav li.topnav-right {
+    float:right;        
+}
+
+.navbrrr {
+    padding:100px;
+}
+
+ul.topnav li a {
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    padding:15px;
+    text-transform: uppercase;
+    color: #111;
+    min-height:16px;
+    
+}
+
+ul.topnav li a:hover {
+    background: #0080ff;
+    color:#fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+            
+@media screen and (max-width:750px) {
+    ul.topnav li:not(:nth-child(1)){
+        display:none;
+    }
+    
+    ul.topnav.responsive {
+        position:relative;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display:block;
+        float:right;
+    }
+    
+    ul.topnav.responsive li {
+        display:inline;
+        float:none;
+        
+    }
+    ul.topnav.responsive li a {
+        display:block;
+        text-align: left;
+    }
+    ul.topnav.responsive li.dropdownIcon {
+        position:absolute;
+        right: 0;
+        top:0;
+    }
+}
+        </style>
+<nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html" class="navbrrr"><img src="assets/classroomioDark.png" height=50px width=50px></a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="topnav-right"><a href="sign_up_main.html">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin.html">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+<script>
+                function dropdownMenu() {
+                    var idx=document.getElementById("dropdownClick");
+                    if(idx.className==="topnav") {
+                        idx.className += " responsive";
+                        /*change topnav to topnav.responsive*/
+                    }
+                    else {
+                        idx.className = "topnav";
+                    }
+
+                } 
+
+                
+</script>
+</div>
+
+
+<div id="testi" style="height:85%;">
+  <div style="color:grey;text-align:center;padding:50px 80px;height:100%;">
+    <big><h1><b>About Us</b></h1><big>
+  <p style="text-align:left">We are a edutech company.We try to bring better technology to aid learning.Our flagship product Classroom.io is classroom management system created to help students learn better.It boosts of online homework submission and interactive classroom chat and additional features.It is can be used free of cost for upto 60 users .</p>
+  
+  
+  </div>
+</div>
+</body>
+</html>

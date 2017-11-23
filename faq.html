@@ -1,0 +1,222 @@
+<html>
+<head>
+    <link rel="icon" href="assets/classroomioDark.png">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8  sans-serif;
+  color: #777;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 12%;
+  background-color: #7777ff;
+}
+.button2 {
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  border-radius:10px;
+}
+.button2:hover {
+    background-color:#4CAF50 ;
+    color: white;
+  transition-duration:2s;
+  
+}
+.testi{
+position:relative;
+height:200%;
+/*background: linear-gradient(red, yellow);*/
+
+}
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #54f77a; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color:aquamarine ;
+}
+
+</style>
+
+
+</head>
+<body style="background-image: url('assets/ab.c.png');">
+    
+<div class='fixed-nav-bar'>
+  <style>
+        .fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 73px;
+  background-color: #54f77a;
+}
+            
+            nav {
+    width: 100%;
+}
+
+nav ul {
+    background-color: #54f77a;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    
+
+}
+
+ul.topnav li {
+    list-style: none;
+    text-decoration: none;
+    float:left; 
+}
+
+ul.topnav li.topnav-right {
+    float:right;        
+}
+
+.navbrrr {
+    padding:100px;
+}
+
+ul.topnav li a {
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    padding:15px;
+    text-transform: uppercase;
+    color: #111;
+    min-height:16px;
+    
+}
+
+ul.topnav li a:hover {
+    background: #0080ff;
+    color:#fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+            
+@media screen and (max-width:750px) {
+    ul.topnav li:not(:nth-child(1)){
+        display:none;
+    }
+    
+    ul.topnav.responsive {
+        position:relative;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display:block;
+        float:right;
+    }
+    
+    ul.topnav.responsive li {
+        display:inline;
+        float:none;
+        
+    }
+    ul.topnav.responsive li a {
+        display:block;
+        text-align: left;
+    }
+    ul.topnav.responsive li.dropdownIcon {
+        position:absolute;
+        right: 0;
+        top:0;
+    }
+}
+        </style>
+<nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html" class="navbrrr"><img src="assets/classroomioDark.png" height=50px width=50px></a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="topnav-right"><a href="sign_up_main.html">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin.html">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+<script>
+                function dropdownMenu() {
+                    var idx=document.getElementById("dropdownClick");
+                    if(idx.className==="topnav") {
+                        idx.className += " responsive";
+                        /*change topnav to topnav.responsive*/
+                    }
+                    else {
+                        idx.className = "topnav";
+                    }
+
+                } 
+
+                
+</script>
+</div>
+
+
+<div id="testi" style="height:85%">
+  <div style="color:black;text-align:center;padding:50px 80px;height:100%;">
+    <big><h1><b>FAQ's</b></h1><big>
+  <button class="accordion">Is is this service free of cost?</button>
+<div class="panel">
+  <p>YES.But for large enterprise users(above 60 students) there is a small monthly user fee to cover server charges.</p>
+</div>
+
+<button class="accordion">What are the features of this service?</button>
+<div class="panel">
+  <p>This is a homework submission feature.It also has a chatroom and online forum application.There is interesting word of the day and quote of the day features.</p>
+</div>
+ 
+<button class="accordion">I cant login into my account or cant sign up?</button>
+<div class="panel">
+  <p>Please send an email to abc.xyz or contact your school administrator</p>
+</div>
+
+
+</body>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</html>

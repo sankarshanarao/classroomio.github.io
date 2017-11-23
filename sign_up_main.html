@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal sign up form</title>
+	<link rel="stylesheet" href="main.css">
+    <link rel ="stylesheet" href = "styles.css">
+</head>
+
+<body class="signin-body">
+    <div class="container signin-container">
+        <div class="row">
+            <div class="col4"></div>
+            <div class="col4">
+                <div class="card signin-card">
+                    <div class="card-block">
+                        <img src="assets/classroomioDarkWithName.png" class="img-fluid signin-img">    
+                        <form class="signup-form" action="sign_up.php" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                            	<input type="text" name="name" placeholder="Full name" title="Format: Xx[space]Xx (e.g. Alex Cican)" autofocus autocomplete="off" required pattern="^\w+\s\w+$" /></div>
+  							<div class="form-group">
+  								<input type="email" name="email" placeholder="Email address" required /></div>
+  							<div class="form-group">
+  								<input type="text" name="university" placeholder="Name of current University" required /></div>
+  							<div class="form-group">
+  								<input type="password" name="password" id="password" placeholder="Password" title="Password min 8 characters. At least one UPPERCASE and one lowercase letter" required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"/></div>
+  							<div class="form-group">
+  								<input type="radio" name="category" value="student" checked>Student<br>
+  								<input type="radio" name="category" value="lecturer">Lecturer<br></div>
+  							<div class="form-group">
+  								Select image to upload:
+  								<input type="file" id="fileToUpload" name="file"></div>
+  							<div class="form-group">
+  								<button type="submit" class="signin-button"value="Sign Up" title="Submit form" class="icon-arrow-right" ><span>Sign up</span></button>
+  								
+  							</form>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col4"></div>
+        </div>
+    </div>
+    </body>
+</html>
